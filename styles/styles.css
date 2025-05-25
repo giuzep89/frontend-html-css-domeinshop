@@ -20,12 +20,10 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 * {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -49,6 +47,8 @@ body {
 }
 
 
+
+
 /*////////////////////////
     3. Areas
 ////////////////////////*/
@@ -56,8 +56,59 @@ body {
 
 
 /*///////////// 3.1 Header /////////////*/
+header {
+    width: 100vw;
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #1C2B32;
+}
 
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
 
+.subtitle {
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding-bottom: 25px;
+}
+
+.header-content{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-top:  45px;
+    padding-bottom:  270px;
+}
+
+form input, button{
+    height: 50px;
+    font-size: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1C2B32;
+}
+
+form input{
+    margin-right: -7px;
+    padding-left: 20px;
+    border-radius: 30px 0 0 30px;
+    background-color: transparent;
+    width: 250px;
+}
+
+#is-domain-free::placeholder{
+    color: #1C2B32;
+}
+
+form button {
+    border-radius: 0 30px 30px 0;
+    background-color: #1C2B32;
+    color:  white;
+    width: 170px;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
