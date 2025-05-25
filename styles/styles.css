@@ -26,12 +26,6 @@ Table of Contents:
     padding: 0;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
 input, button, textarea, select {
     font: inherit;
 }
@@ -43,6 +37,9 @@ main{
     padding: 30px 100px;
 }
 
+h2{
+    padding: 30px 0;
+}
 
 /*////////////////////////
     2. Typography
@@ -53,6 +50,9 @@ body {
     font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
 
 
 
@@ -121,17 +121,12 @@ form button {
 
 
 /*///////////// 3.3 Support /////////////*/
-.support-content{
-    position:  relative;
-}
-.support h2{
-    padding: 20px 0;
-}
-figure img {
+
+.support img {
     max-width: 100%;
     border-radius: 10px;
 }
-figcaption{
+.support p{
     text-align: left;
     font-size:  0.8rem;
     padding: 20px 0;
@@ -139,18 +134,33 @@ figcaption{
 .contact-button{
     background-color: #1C2B32;
     margin-left: 0;
-    position: absolute;
-    left: 0;
+    position: relative;
     border-radius: 30px;
-    padding: 10px;
-}
-button a{
+    padding: 0 20px 0 20px;
     color: white;
-    text-decoration: none;
+    display: block;
 }
+
 
 /*///////////// 3.4 Faq /////////////*/
+.questions-container{
+    text-align: left;
+}
 
+summary{
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.questions-container details{
+    text-align: justify;
+    padding: 10px;
+}
+details p{
+    background-color: #899CA0;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
