@@ -36,6 +36,13 @@ input, button, textarea, select {
     font: inherit;
 }
 
+main{
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px 100px;
+}
+
 
 /*////////////////////////
     2. Typography
@@ -57,7 +64,6 @@ body {
 
 /*///////////// 3.1 Header /////////////*/
 header {
-    width: 100vw;
     background-image: url("/assets/images/mountains.jpg");
     background-size: cover;
     background-position: center;
@@ -115,11 +121,43 @@ form button {
 
 
 /*///////////// 3.3 Support /////////////*/
-
-
+.support-content{
+    position:  relative;
+}
+.support h2{
+    padding: 20px 0;
+}
+figure img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+figcaption{
+    text-align: left;
+    font-size:  0.8rem;
+    padding: 20px 0;
+}
+.contact-button{
+    background-color: #1C2B32;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+    padding: 10px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
 
 
 /*///////////// 3.5 Footer /////////////*/
+
+.copyright{
+    background-color: #1C2B32;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
