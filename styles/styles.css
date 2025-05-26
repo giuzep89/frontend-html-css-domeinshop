@@ -117,6 +117,49 @@ form button {
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
+.quote-card{
+    padding: 50px 80px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    font-size: 0.7rem;
+    border-radius: 10px;
+    position: relative;
+}
+blockquote {
+    text-align: left;
+}
+blockquote figure{
+    text-align: left;
+    position: relative;
+}
+
+figure figcaption {
+    text-align: left;
+    display: inline;
+    font-style: italic;
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 20px;
+}
+
+figure img {
+    height: 44px;
+    border-radius: 50%;
+}
+
+blockquote p {
+    padding-bottom: 20px;
+}
+
+h2 + .quote-card {
+    margin-bottom: 30px;
+}
+
+.quotes-thumbnail{
+    height: 25px;
+    position: absolute;
+    left: 45px;
+    top: 43px;
+}
 
 
 
